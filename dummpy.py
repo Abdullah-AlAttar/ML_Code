@@ -1,9 +1,14 @@
-import numpy as np
+
+import pandas as pd
+from sklearn.preprocessing import OneHotEncoder
+
+from sklearn.preprocessing import LabelEncoder
 
 
-test = np.random.RandomState(1)
+df = pd.read_csv('./data/wine.csv', header=None)
 
-w = test.normal(0.0, 0.01, 10)
-x = np.arange(9.).reshape(3, 3)
-print(x)
-print(np.where(x > 5, x, -1))
+print(df.head())
+
+
+x = 34
+y = 334
